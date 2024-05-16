@@ -19,11 +19,24 @@ const RegisterButton = (props) => {
 
 const InputSubmit = (props) => {
   return (
-    <div className="button InputSubmit">
+    <div className="button InputSubmit" onClick={props.hide}>
       <input type="submit" value={props.children}/>
     </div>
   )
 }
 
+const FirstBtn = (props) =>{
+  return (
+    <button type='button' className='firstBtn'>{props.children}</button>
+  )
+}
+
+const SecondBtn = (props) =>{
+  return (
+    <button type='button' className='secondBtn'>{props.children}</button>
+  )
+}
+
+
 export default LoginButton;
-export {RegisterButton , InputSubmit}
+export {RegisterButton , InputSubmit , FirstBtn , SecondBtn}
