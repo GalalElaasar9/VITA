@@ -19,6 +19,15 @@ import Prescriptions_2 from './pages/Prescriptions_2/Prescriptions_2'
 import AddPrescription from './pages/AddPrescription/AddPrescription'
 import ViewPrescription from './pages/ViewPrescription/ViewPrescription'
 import Profile from './pages/Profile/Profile'
+import Dashboard from './pages/Dashboard/Dashboard'
+import ProfileDashboard from './Popus/ProfileDashboard/ProfileDashboard'
+import DoctorOptions from './Popus/DoctorOptions/DoctorOptions'
+import X_RaysName from './pages/X_RaysName/X_RaysName'
+import UploadTests from './pages/UploadTests/UploadTests'
+import Admin from './pages/Admin/Admin'
+import UploadXRays from './pages/UploadXRays/UploadXRays'
+import UploadPost from './pages/UploadPost/UploadPost'
+import ManageAccounts from './pages/ManageAccounts/ManageAccounts'
 
 function App() {
   return (
@@ -44,6 +53,14 @@ function App() {
           <Route path="/AddPrescription" element={<AddPrescription/>} />
           <Route path="/ViewPrescription" element={<ViewPrescription/>} />
           <Route path="/Profile" element={<Profile/>} />
+          <Route path='/Dashboard' element={<Dashboard/>}/>
+          <Route path='/ProfileDashboard' element={<ProfileDashboard/>}/>
+          <Route path='/X_RaysName' element={<X_RaysName/>}/>
+          <Route path='/UploadTests' element={<UploadTests/>}/>
+          <Route path='/UploadXRays' element={<UploadXRays/>}/>
+          <Route path='/UploadPost' element={<UploadPost/>}/>
+          <Route path='/Admin' element={<Admin/>}/>
+          <Route path='/ManageAccounts' element={<ManageAccounts/>}/>
         </Routes>
       </BrowserRouter>
     </>

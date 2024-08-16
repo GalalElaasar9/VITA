@@ -7,15 +7,21 @@
   top: 0;
   background-color: rgba(49,49,49,0.8);
   .popup{
-    width: 510px;
     height: auto !important;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 10px;
     padding-bottom: 10px !important;
-    padding-top: 50px !important;
     position: relative;
     overflow: hidden;
+    &.doctorOptions{
+      max-height: 400px;
+      height: 100%;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
     .DoctorOptions{
       display: grid;
       grid-template-columns: repeat(3,1fr);

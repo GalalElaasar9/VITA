@@ -1,0 +1,117 @@
+.UploadXRays{
+  width: calc(100% - 90px);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-top: 98px;
+  height: 100vh;
+  .upload{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    form{
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 7px;
+      h3{
+        color: #676767;
+      }
+      .file{
+        img{
+          position: absolute;
+        }
+        input{
+          cursor: pointer;
+          position: relative;
+          opacity: 0;
+          width: 480px;
+          height: 220px;
+        }
+      }
+      h5{
+        color: #676767;
+      }
+      .fileNotUpload{
+        border: 1px solid #676767;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+        width: 480px;
+        padding: 10px;
+        border-radius: 7px;
+        background: #fff;
+        margin-bottom: 5px;
+        .icon{
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #676767;
+          cursor: pointer;
+          svg{
+            color: #fff;
+            font-weight: 500;
+          }
+        }
+      }
+      .uploaded{
+        h5{
+          color: #676767;
+        }
+        .content{
+          display: flex;
+          flex: 1;
+          width: 100%;
+          gap: 10px;
+          .fileName{
+            border: 1px solid #11AF22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 7px;
+            background: #fff;
+            margin-bottom: 15px;
+            flex: 1;
+            .icon{
+              border-radius: 50%;
+              width: 25px;
+              height: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #FFF3F3;
+              cursor: pointer;
+              svg{
+                color: #fff;
+                font-weight: 500;
+                font-size: 12px;
+                color: #E41D1D;
+              }
+            }
+          }
+          .category{
+            height: 46px;
+          }
+        }
+      }
+      input[type="submit"]{
+        background-color: #0C68CF;
+        margin-top: 30px;
+        width: 100%;
+        padding: 12px;
+        border: 0;
+        border-radius: 7px;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+}

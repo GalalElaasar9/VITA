@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import DoctorOptions from '../../Popus/DoctorOptions/DoctorOptions';
 import AddProfile from '../../Popus/AddProfile/AddProfile';
-
+import Rectangle from '../../assets/images/Rectangle 13.png'
 const Sidebar = () => {
   const [popup , setPopup] = useState(false)
   const showPopup = () =>{
@@ -39,6 +39,9 @@ const Sidebar = () => {
           </div>
           <div className="logout">
             <Link to="/login"><IoMdLogOut/></Link>
+            <Link>
+              <img src={Rectangle} alt="" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import './DoctoeOptions.css'
+import './DoctorOptions.css'
 import image_01 from "../../assets/images/Group 1171275817.svg";
 import image_02 from "../../assets/images/Group 1171275818.svg";
 import image_03 from "../../assets/images/Group 1171275808.svg";
@@ -8,6 +8,7 @@ import image_06 from "../../assets/images/Group 1171275811.svg";
 import { Link } from 'react-router-dom';
 import { FaXmark } from "react-icons/fa6";
 import { useState } from 'react';
+import uploadPost from '../../assets/images/uploadImage.svg'
 
 const DoctorOptions = () => {
   const [popup , setPopup] = useState(true);
@@ -26,7 +27,7 @@ const DoctorOptions = () => {
     {popup && (
 
       <div className='overlay d-flex justify-content-center align-items-center'>
-        <div className="popup">
+        <div className="popup doctorOptions" style={{ paddingTop:'50px' }}>
           <div className="DoctorOptions">
             <Link to={""} className="option">
               <img src={image_01} alt="" />
@@ -51,6 +52,10 @@ const DoctorOptions = () => {
             <Link className="option">
               <img src={image_06} alt="" />
               <h3>Add prescription</h3>
+            </Link>
+            <Link className='option'>
+              <img src={uploadPost} alt="" />
+              <h3>Upload Post</h3>
             </Link>
           </div>
           <div className="close">

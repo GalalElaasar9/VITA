@@ -1,5 +1,6 @@
 import './AccessPatient.css'
 import Eye from '../../assets/images/big Eye.png'
+import uploadPost from '../../assets/images/uploadImage.svg'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 import { FaXmark } from 'react-icons/fa6';
@@ -19,10 +20,14 @@ const AccessPatient = () => {
     <>
       {popup && (
         <div className='overlay d-flex justify-content-center align-items-center'>
-          <div className="popup">
+          <div className="popup d-flex gap-3">
             <Link to={'/patientAccess'} className='box'>
               <img src={Eye} alt="" />
               <h3>access patient</h3>
+            </Link>
+            <Link to={'/'} className='box'>
+              <img src={uploadPost} alt="" />
+              <h3>Upload Post</h3>
             </Link>
             <div className="close">
               <FaXmark onClick={hide}/>

@@ -5,6 +5,7 @@ import Ellipse from "../../assets/images/Ellipse 1.png";
 import Vector_2 from "../../assets/images/Vector2.png";
 import Vector from "../../assets/images/Vector.png";
 import LoginButton, { RegisterButton } from "../../components/Buttons/Buttons";
+import map from '../../assets/images/Text.png'
 
 const Home = () => {
   return (
@@ -34,6 +35,18 @@ const Home = () => {
           <img src={Vector} className="vector_3" />
           <img src={Vector_2} className="vector_4" />
           <img src={Vector} className="vector_5" />
+        </div>
+      </section>
+      <section className="analysis" id="analysis">
+        <div className="container">
+          <div className="content d-flex justify-content-center align-items-center">
+            <div className="image">
+              <img src={map} alt="" />
+            </div>
+            <div className="text">
+              <h2>VITA.</h2>
+            </div>
+          </div>
         </div>
       </section>
     </>

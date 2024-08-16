@@ -35,7 +35,7 @@ const LineChart = () => {
   }, [])
   return (
     <>
-      <canvas ref={chartRef} style={{width:"350px",height:"180px"}}></canvas>
+      <canvas ref={chartRef} style={{width:"350px",height:"100%"}}></canvas>
     </>
   )
 }
